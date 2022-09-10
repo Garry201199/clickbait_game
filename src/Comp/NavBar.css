@@ -1,0 +1,34 @@
+
+.list{
+    list-style: none;
+}
+.item{
+    display: inline-block;
+    text-decoration: none;
+    margin-block: 20px;
+    text-decoration: none;
+    color: #fff;
+    position: relative;
+}
+.item::after{
+    
+    content: '';
+    width: 100%;
+    height: 5px;
+    background-color: rgb(183, 8, 8);
+    border-radius: 4px;
+    position: absolute;
+    left: 0px;
+    bottom: -5px;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform .25s ease;
+
+}
+.item:hover::after{
+    transform: scaleX(1) ;
+}
+.bgRound{
+    background-repeat: true;
+    
+}
